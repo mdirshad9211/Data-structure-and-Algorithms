@@ -1,0 +1,22 @@
+EXPLANATION
+//Create a variable and initialize it with 0
+// use loop (using variable r)
+//check condition 
+//left and right should nit be equal
+//if true then left = right
+//return left +1
+
+//CODE
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.size() == 0) return 0;
+        int l = 0;
+        for(int r =1; r< nums.size(); r++){
+           if(nums[l] != nums[r])
+               left++;
+               nums[l] = nums[r];
+           }
+    return l+1;
+    }
+};
