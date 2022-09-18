@@ -1,0 +1,24 @@
+//APPROACH
+Search and Remove 
+1. we will search the element 
+2. if found  we will push the element on the right side of val  one position back.
+
+
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int i = 0;
+        int n = nums.size();
+        while(i<n){
+          if(nums[i]==val){
+            nums[i]= nums[n-1];
+            --n;
+          } else {
+            ++i;
+          }
+       }
+       return n;
+    }
+};
+
+
